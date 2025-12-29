@@ -25,6 +25,7 @@ class Index extends Component
     function delete(Category $category)
     {
         $category->delete();
+        $this->dispatch('deleted');
     }
 
 

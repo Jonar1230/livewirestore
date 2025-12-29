@@ -38,6 +38,13 @@ return [
             'report' => false,
         ],
 
+
+        'public_upload' => [
+            'driver' => 'local',
+            'root' => public_path(),
+        ],
+
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
